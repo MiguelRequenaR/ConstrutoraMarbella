@@ -39,7 +39,7 @@ header{
     transition: all .55s ease;
 }
 .navlist a:hover{
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #00abf0;
 }
 
 .ri-menu-line{
@@ -53,7 +53,7 @@ header{
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(245.59deg, #697a7a 0%, #75898b 28.53%, #acb4b4 75.52%);
+    background: #081b29;
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -65,8 +65,8 @@ section{
 }
 
 .frontpage-text h5{
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 900;
     color: white;
     margin-bottom: 40px;
 }
@@ -90,7 +90,7 @@ section{
 }
 
 .logo-img img{
-    width: 700px;
+    width: 450px;
     height: auto;
 }
 
@@ -98,7 +98,7 @@ section{
     display: inline-block;
     color: white;
     background: #081b29;
-    border: 1px solid transparent;
+    border: 1px solid white;
     padding: 12px 30px;
     line-height: 1.4;
     font-size: 14px;
@@ -115,6 +115,9 @@ section{
     background: transparent;
     border: 1px solid white;
     margin-left: 20px;
+}
+.frontpage-text a.movie:hover{
+    background: #00abf0;
 }
 .frontpage-text a.movie i{
     vertical-align: middle;
@@ -134,7 +137,7 @@ section{
     transition: all .50s ease;
 }
 .icons i:hover{
-    color: #081b29;
+    color: #00abf0;
     transform: translateY(-5px);
 }
 .scroll-down{
@@ -222,7 +225,7 @@ section{
         right: -100%;
         width: 300px;
         height: 40vh;
-        background: #00abf0;
+        background: #081b29;
         display: flex;
         align-items: center;
         flex-direction: column;
