@@ -1,6 +1,6 @@
 import 'remixicon/fonts/remixicon.css';
 import '../styles/style.css';
-import logo from '../assets/images/logo.png';
+import logo from '../assets/images/logoCM.png';
 
 function Home() {
   return (
