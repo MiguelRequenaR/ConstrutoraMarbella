@@ -4,7 +4,7 @@ import '../styles/style.css';
 
 function Header() {
   return (
-    <header>
+    <header className='navheader'>
       <a href="" className="logo">Marbella</a>
       
       <ul className='navlist'>

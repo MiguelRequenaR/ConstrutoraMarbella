@@ -25,13 +25,15 @@ header{
     font-weight: bold;
     color: white;
 }
-
+.navheader{
+    background-color: #f2a516;
+}
 .navlist{
     display: flex;
 }
 
 .navlist a{
-    color: white;
+    color: #302b27;
     margin-left: 60px;
     font-size: 17px;
     font-weight: 600;
@@ -53,7 +55,7 @@ header{
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background: #b6b7b8;
+    background: #ffffff;
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -67,30 +69,30 @@ section{
 .frontpage-text h5{
     font-size: 20px;
     font-weight: 900;
-    color: white;
+    color: #302b27;
     margin-bottom: 40px;
 }
 .frontpage-text h1{
-    font-size: 90px;
+    font-size: 80px;
     line-height: 1;
-    color: white;
+    color: #302b27;
     margin: 0 0 45px;
 }
 .frontpage-text h4{
     font-size: 20px;
     font-weight: 600;
-    color: white;
+    color: #302b27;
     margin-bottom: 10px;
 }
 .frontpage-text p{
-    color: white;
+    color: #302b27;
     font-size: 15px;
     line-height: 1.9;
     margin-bottom: 40px;
 }
 
 .logo-img img{
-    width: 450px;
+    width: 440px;
     height: auto;
 }
 
@@ -112,7 +114,7 @@ section{
     transform: translateX(8px);
 }
 .frontpage-text a.movie{
-    background: transparent;
+    background: #081b29;
     border: 1px solid white;
     margin-left: 20px;
 }
@@ -133,7 +135,7 @@ section{
     display: block;
     margin: 26px 0;
     font-size: 30px;
-    color: white;
+    color: #302b27;
     transition: all .50s ease;
 }
 .icons i:hover{
@@ -150,7 +152,7 @@ section{
     padding: 12px;
     font-size: 25px;
     color: white;
-    background: #00abf0;
+    background: #302b27;
     border-radius: 30px;
     transition: all .50s ease;
 }
