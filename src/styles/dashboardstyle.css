@@ -30,9 +30,7 @@ a{
 li{
     list-style: none;
 }
-html{
-    overflow-x: hidden;
-}
+
 body.dark{
     --light: #181a1e;
     --grey: #25252c;
@@ -68,8 +66,12 @@ body{
     align-items: center;
     color: var(--primary);
     z-index: 500;
+    padding-left: 20px;
     padding-bottom: 20px;
     box-sizing: content-box;
+}
+.sidebar .logo i{
+    padding-right: 10px;
 }
 .sidebar .logo .logo-name span{
     color: var(--dark);
@@ -89,7 +91,11 @@ body{
     background: transparent;
     margin-left: 6px;
     border-radius: 48px 0 0 48px;
-    padding: 4px;
+    padding: 5px;
+}
+.sidebar .side-menu li i{
+    margin-right: 10px;
+    font-size: 20px;
 }
 .sidebar .side-menu li.active{
     background: var(--grey);
@@ -117,10 +123,11 @@ body{
     box-shadow: 20px -20px 0 var(--grey);
     z-index: -1;
 }
+
 .sidebar .side-menu li a{
     width: 100%;
     height: 100%;
-    font-weight: bold;
+    font-weight: 600;
     background: var(--light);
     display: flex;
     align-items: center;
@@ -270,4 +277,54 @@ body{
 }
 .content nav #theme-toggle:checked + .theme-toggle::before{
     left: calc(100% -(25px - 4px) -2px);
+}
+.content main{
+    width: 100%;
+    padding: 36px 24px;
+    max-height: calc(100vh - 56px);
+}
+.content main .header1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 16px;
+    flex-wrap: wrap;
+}
+.content main .header1 .left h1{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--dark);
+}
+.content main .header1 .left .breadcrumb{
+    display: flex;
+    align-items: center;
+    grid-gap: 16px;
+}
+.content main .header1 .left .breadcrumb li{
+    color: var(--dark);
+}
+.content main .header1 .left .breadcrumb li a{
+    color: var(--dark-grey);
+    pointer-events: none;
+}
+.content main .header1 .left .breadcrumb li a.active{
+    color: var(--primary);
+    pointer-events: none;
+}
+.content main .header1 .report{
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 36px;
+    background: var(--primary);
+    color: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px;
+    font-weight: 500;
+}
+.content main .iconos1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (240px, 1fr));
 }

@@ -11,11 +11,15 @@ function App() {
     let menu = document.querySelector('.ri-menu-line');
     let navlist = document.querySelector('.navlist');
 
-    menu.onclick = () => {
-      menu.classList.toggle('bx-menu');
-      navlist.classList.toggle('open');
-    };
+    if (menu && navlist) {
+      menu.onclick = () => {
+        menu.classList.toggle('bx-menu');
+        navlist.classList.toggle('open');
+      };
+    }
   }, []);
+
+
 
   return (
     <BrowserRouter>

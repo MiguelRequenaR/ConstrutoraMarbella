@@ -8,7 +8,7 @@ function Dashboard() {
       <div className='sidebar'>
           <a href="#" className='logo'>
               <i className="ri-building-2-fill"></i>
-              <div className='logo-name'><span>Constr</span>Marbella</div>
+              <div className='logo-name'><span>Marbella</span></div>
           </a>
           <ul className='side-menu'>
               <li><a href=""><i className="ri-dashboard-fill"></i>Dashboard</a></li>
@@ -47,69 +47,69 @@ function Dashboard() {
                   <img src={logoCM} alt="" />
               </a>   
           </nav>
+
+        <main>
+            <div className='header1'>
+                <div className='left'>
+                    <h1>Dashboard</h1>
+                    <ul className='breadcrumb'>
+                        <li>
+                            <a href="#">
+                                Analytics
+                            </a>
+                        </li>
+                        /
+                        <li><a href="#" className='active'>Shop</a></li>
+                    </ul>
+                </div>
+                <a href='#' className='report'>
+                    <i className="ri-download-cloud-2-line"></i>
+                    <span>Descargar CSV</span>
+                </a>
+            </div>
+
+            <ul className="iconos1">
+                <li>
+                <i className="ri-calendar-line"></i>
+                <span className='info'>
+                    <h3>
+                        1074
+                    </h3>
+                    <p>Orden de Pago</p>
+                </span>
+                </li>
+                <li>
+                <i className="ri-slideshow-line"></i>
+                <span className='info'>
+                    <h3>
+                        3000
+                    </h3>
+                    <p>Visitar Sitio</p>
+                </span>
+                </li>
+                <li>
+                <i className="ri-line-chart-line"></i>
+                <span className='info'>
+                    <h3>
+                        14,721
+                    </h3>
+                    <p>Searches</p>
+                </span>
+                </li>
+                <li>
+                <i className="ri-money-dollar-box-line"></i>
+                <span className='info'>
+                    <h3>
+                        $6,450
+                    </h3>
+                    <p>Ventas totales</p>
+                </span>
+                </li>
+            </ul>
+
+        </main>
+
       </div>
-
-      <main>
-          <div className='header'>
-              <div className='left'>
-                  <h1>Dashboard</h1>
-                  <ul className='breadcrumb'>
-                      <li>
-                          <a href="#">
-                              Analytics
-                          </a>
-                      </li>
-                      /
-                      <li><a href="#" className='active'>Shop</a></li>
-                  </ul>
-              </div>
-              <a href='#' className='report'>
-                  <i className="ri-download-cloud-2-line"></i>
-                  <span>Descargar CSV</span>
-              </a>
-          </div>
-
-          <ul className="insights">
-            <li>
-              <i className="ri-calendar-line"></i>
-              <span className='info'>
-                  <h3>
-                      1074
-                  </h3>
-                  <p>Orden de Pago</p>
-              </span>
-            </li>
-            <li>
-            <i className="ri-slideshow-line"></i>
-              <span className='info'>
-                  <h3>
-                      3000
-                  </h3>
-                  <p>Visitar Sitio</p>
-              </span>
-            </li>
-            <li>
-            <i className="ri-line-chart-line"></i>
-              <span className='info'>
-                  <h3>
-                      14,721
-                  </h3>
-                  <p>Searches</p>
-              </span>
-            </li>
-            <li>
-            <i className="ri-money-dollar-box-line"></i>
-              <span className='info'>
-                  <h3>
-                      $6,450
-                  </h3>
-                  <p>Ventas totales</p>
-              </span>
-            </li>
-          </ul>
-
-      </main>
-
 
     </div>
   );
