@@ -20,7 +20,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.bx{
+.ri{
     font-size: 1.7rem;
 }
 
@@ -76,7 +76,7 @@ body{
 .sidebar .logo .logo-name span{
     color: var(--dark);
 }
-.sidebar .logo .bx{
+.sidebar .logo .ri-building-2-fill{
     min-width: 60px;
     display: flex;
     justify-content: center;
@@ -286,7 +286,7 @@ body{
 .content main .header1{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     grid-gap: 16px;
     flex-wrap: wrap;
 }
@@ -326,5 +326,177 @@ body{
 }
 .content main .iconos1{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax (240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 24px;
+    margin-top: 36px;
+}
+.content main .iconos1 li{
+    padding: 24px;
+    background: var(--light);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    grid-gap: 24px;
+    cursor: pointer;
+}
+.content main .iconos1 li i{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content main .iconos1 li:nth-child(1) .ri-calendar-line{
+    background: var(--light-primary);
+    color: var(--primary);
+}
+.content main .iconos1 li:nth-child(2) .ri-slideshow-line{
+    background: var(--light-warning);
+    color: var(--warning);
+}
+.content main .iconos1 li:nth-child(3) .ri-line-chart-line{
+    background: var(--light-success);
+    color: var(--success);
+}
+.content main .iconos1 li:nth-child(4) .ri-money-dollar-box-line{
+    background: var(--light-danger);
+    color: var(--danger);
+}
+.content main .iconos1 li .info h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--dark);
+}
+.content main .iconos1 li .info p{
+    color: var(--dark);
+}
+.content main .bottom-data{
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 24px;
+    margin-top: 24px;
+    width: 100%;
+    color: var(--dark);
+}
+.content main .bottom-data>div{
+    border-radius: 20px;
+    background: var(--light);
+    padding: 24px;
+    overflow-x: auto;
+}
+.content main .bottom-data .header1{
+    display: flex;
+    align-items: center;
+    grid-gap: 16px;
+    margin-bottom: 24px;
+}
+.content main .bottom-data .header1 h3{
+    margin-right: auto;
+    font-size: 24px;
+    font-weight: 600;
+}
+.content main .bottom-data .orders .header1 i{
+    font-size: 20px;
+    cursor: pointer;
+}
+.content main .bottom-data .orders{
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+.content main .bottom-data .orders table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.content main .bottom-data .orders table th{
+    padding-bottom: 12px;
+    font-size: 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--grey);
+}
+.content main .bottom-data .orders table td{
+    padding: 16px 0;
+}
+.content main .bottom-data .orders table tr td:first-child{ 
+    display: flex;
+    align-items: center;
+    grid-gap: 12px;
+    padding-left: 6px;
+}
+.content main .bottom-data .orders table td img{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.content main .bottom-data .orders table tbody tr{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.content main .bottom-data .orders table tbody tr td p{
+    font-weight: bold;
+}
+.content main .bottom-data .orders table tbody tr td{
+    font-weight: bold;
+}
+.content main .bottom-data .orders table tbody tr:hover{
+    background: var(--grey);
+}
+.content main .bottom-data .orders table tr td .estado{
+    font-size: 12px;
+    padding: 6px 16px;
+    color: var(--light);
+    border-radius: 20px;
+    font-weight: 700;
+}
+.content main .bottom-data .orders table tr td .estado.completado{
+    background: var(--success);
+}
+.content main .bottom-data .orders table tr td .estado.pendiente{
+    background: var(--warning);
+}
+.content main .bottom-data .orders table tr td .estado.proceso{
+    background: var(--primary);
+}
+.content main .bottom-data .alert{
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+.content main .bottom-data .alert .header1 i{
+    font-size: 20px;
+    cursor: pointer;
+}
+.content main .bottom-data .alert .task-list{
+    width: 100%;
+}
+.content main .bottom-data .alert .task-list li{
+    width: 100%;
+    margin-bottom: 16px;
+    background: var(--grey);
+    padding: 14px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content main .bottom-data .alert .task-list li .task-title{
+    display: flex;
+    align-items: center;
+}
+.content main .bottom-data .alert .task-list li .task-title p{
+    margin-left: 6px;
+    font-weight: bold;
+}
+.content main .bottom-data .alert .task-list li .ri{
+    cursor: pointer;
+}
+.content main .bottom-data .alert .task-list li.completado{
+    border-left: 10px solid var(--success);
+}
+.content main .bottom-data .alert .task-list li.no-completado{
+    border-left: 10px solid var(--danger);
+}
+.content main .bottom-data .alert .task-list li:last-child{
+    margin-bottom: 0;
 }
