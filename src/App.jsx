@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
-import Dashboard from './pages/Dashboard'; 
-import Home from './pages/Home';
-import Header from './components/Header';
+import Dashboard from './components/Dashboard/Dashboard'; 
+import Home from './components/Home/Home';
+import Header from './components/Home/Header';
 import 'remixicon/fonts/remixicon.css';
 import './styles/style.css';
 

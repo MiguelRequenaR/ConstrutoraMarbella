@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import 'remixicon/fonts/remixicon.css';
-import '../styles/style.css';
+import '../../styles/style.css';
 
 function Header() {
   const location = useLocation();
