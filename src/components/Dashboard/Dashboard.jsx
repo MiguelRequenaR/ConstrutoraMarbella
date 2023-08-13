@@ -1,9 +1,25 @@
+import { useState } from 'react';
 import 'remixicon/fonts/remixicon.css';
 import '../../styles/dashboardstyle.css';
 import logoCM from '../../assets/images/logoCM.png';
 import user from '../../assets/images/usuario.png';
 
 function Dashboard() {
+    const [activeLink, setActiveLink] = useState('Dashboard'); // Estado para almacenar el enlace activo
+
+    const handleLinkClick = (link) => {
+        setActiveLink(link); // Actualizar el enlace activo cuando se hace clic
+    };
+
+    const sidebarLinks = [
+        { label: 'Dashboard', icon: 'ri-dashboard-fill' },
+        { label: 'Shop', icon: 'ri-store-2-line' },
+        { label: 'Analytics', icon: 'ri-line-chart-line' },
+        { label: 'Message', icon: 'ri-chat-1-line' },
+        { label: 'Usuarios', icon: 'ri-group-fill' },
+        { label: 'Configuración', icon: 'ri-file-settings-fill' },
+    ];
+
   return (
     <div>
       <div className='sidebar'>
@@ -12,13 +28,19 @@ function Dashboard() {
               <div className='logo-name'><span>Marbella</span></div>
           </a>
           <ul className='side-menu'>
-              <li><a href=""><i className="ri-dashboard-fill"></i>Dashboard</a></li>
-              <li><a href=""><i className="ri-store-2-line"></i>Shop</a></li>
-              <li className='active'><a href=""><i className="ri-line-chart-line"></i>Analytics</a></li>
-              <li><a href=""><i className="ri-chat-1-line"></i>Message</a></li>
-              <li><a href=""><i className="ri-group-fill"></i>Usuarios</a></li>
-              <li><a href=""><i className="ri-file-settings-fill"></i>Configuración</a></li>
+            
+  
+              {sidebarLinks.map((link, index) => (
+                <li key={index} className={activeLink === link.label ? 'active' : ''}>
+                        <a href="#" onClick={() => handleLinkClick(link.label)}>
+                            <i className={link.icon}></i>
+                            {link.label}
+                        </a>
+                    </li>
+                ))}
+
           </ul>
+          
           <ul className='side-menu'>
               <li>
                   <a href="" className='logout'>
