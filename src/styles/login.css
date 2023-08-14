@@ -1,15 +1,12 @@
 *{
     box-sizing: border-box;
 }
-
-html, body, .wrapper{
-    height: 100%;
-}
-body{
+.bodylogin{
     display: grid;
     place-items: center;
     margin: 0;
-    padding: 0 24px;
+    height: 965px;
+    padding: 24px;
     background: linear-gradient(to right, #FFA500, #ff7d4e, #ff5858);
     color: black;
     animation: rotate 6s infinite alternate linear;
@@ -62,7 +59,7 @@ body{
     padding: 0 16px;
     border-radius: 1.25rem;
     background: #f2a516;
-    color: #f9f9f9;
+    color: rgb(63, 63, 63);
     border: 0;
     font-size: 17px;
     font-weight: bold;

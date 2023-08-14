@@ -2,7 +2,7 @@ import '../../styles/login.css';
 
 function Login() {
   return (
-    <div>
+    <div className='bodylogin'>
         <div className="login">
             <h2>Inicio de Sesión</h2>
             <h3>Constructora Marbella</h3>
