@@ -2,24 +2,23 @@
     box-sizing: border-box;
 }
 .bodylogin{
-    display: grid;
-    place-items: center;
-    margin: 0;
-    height: 965px;
-    padding: 24px;
-    background: linear-gradient(to right, #FFA500, #ff7d4e, #ff5858);
-    color: black;
-    animation: rotate 6s infinite alternate linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to left, #ff8355, #ffe658, #ff7860);
 }
 .login{
     position: relative;
     z-index: 3;
     width: 100%;
+    max-width: 400px;
     margin: 0 20px;
     padding: 70px 30px 44px;
     border-radius: 1.25rem;
     background: white;
     text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .login > h2{
     font-size: 36px;
@@ -81,11 +80,7 @@
 .formulario > a:hover{
     color: #10449a;
 }
-@keyframes rotate{
-    100%{
-        background-position: 15% 50%;
-    }
-}
+
 @media (width >= 500px){
     body{
         padding: 0;

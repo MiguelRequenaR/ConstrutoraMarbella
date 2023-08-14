@@ -6,9 +6,14 @@ import user from '../../assets/images/usuario.png';
 
 function Dashboard() {
     const [activeLink, setActiveLink] = useState('Dashboard'); // Estado para almacenar el enlace activo
+    const [isSidebarClosed, setIsSidebarClosed] = useState(false); 
 
     const handleLinkClick = (link) => {
         setActiveLink(link); // Actualizar el enlace activo cuando se hace clic
+    };
+
+    const handleToggleSidebar = () => {
+        setIsSidebarClosed(!isSidebarClosed);
     };
 
     const sidebarLinks = [
@@ -19,10 +24,10 @@ function Dashboard() {
         { label: 'Usuarios', icon: 'ri-group-fill' },
         { label: 'Configuración', icon: 'ri-file-settings-fill' },
     ];
-
+    
   return (
     <div>
-      <div className='sidebar'>
+      <div className={`sidebar ${isSidebarClosed ? 'close' : ''}`}>
           <a href="#" className='logo'>
               <i className="ri-building-2-fill"></i>
               <div className='logo-name'><span>Marbella</span></div>
@@ -53,15 +58,13 @@ function Dashboard() {
 
       <div className='content'>
           <nav>  
-              <i className="ri-menu-2-line"></i>
+              <i className="ri-menu-2-line" onClick={handleToggleSidebar}></i>
               <form action="#">
                   <div className='form-input'>
                       <input type="search" placeholder='Buscar...' />
                       <button className='search-btn' type='submit'><i className="ri-search-line"></i></button>
                   </div>
               </form>
-              <input type="checkbox" id='theme-toggle' hidden/>
-              <label htmlFor="theme-toggle" className='theme-toggle' id='theme-toggle'></label>
               <a href="#" className='notif'>
                   <i className="ri-notification-fill"></i>
                   <span className='count'>12</span>

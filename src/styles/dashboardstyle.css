@@ -256,29 +256,7 @@ body{
     object-fit: cover;
     border-radius: 50%;
 }
-.content nav .theme-toggle{
-    display: block;
-    min-width: 50px;
-    height: 25px;
-    background: var(--grey);
-    cursor: pointer;
-    position: relative;
-    border-radius: 25px;
-}
-.content nav .theme-toggle::before{
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    bottom: 2px;
-    width: calc(25px - 4px);
-    background: var(--primary);
-    border-radius: 50%;
-    transition: all 0.3s ease;
-}
-.content nav #theme-toggle:checked + .theme-toggle::before{
-    left: calc(100% -(25px - 4px) -2px);
-}
+
 .content main{
     width: 100%;
     padding: 36px 24px;
@@ -535,5 +513,17 @@ body{
     }
     .content nav form.show~.notif, .content nav form.show~.profile{
         display: none;
+    }
+    .content main .icono1{
+        grid-template-columns: 1fr;
+    }
+    .content main .bottom-data .header1{
+        min-width: 340px;
+    }
+    .content main .bottom-data .orders table{
+        min-width: 340px;
+    }
+    .content main .bottom-data .alert .task-list{
+        min-width: 340px;
     }
 }
