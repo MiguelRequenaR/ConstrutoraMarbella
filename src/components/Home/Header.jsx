@@ -14,6 +14,8 @@ function Header() {
   // No renderizar el header en la ruta "/dashboard"
   if (location.pathname === '/dashboard') {
     return null;
+  }else if (location.pathname === '/login') {
+    return null;
   }
 
   return (
@@ -25,8 +27,9 @@ function Header() {
         <li><a href="#">Nosotros</a></li>
         <li><a href="#">Proyectos en Venta</a></li>
         <li><a href="#">Proyectos Ejecutados</a></li>
-        <Link to="/dashboard"><li>Dashboard</li></Link> 
         <li><a href="#">Contacto</a></li>
+        <Link to="/login"><li>Iniciar Sesión</li></Link> 
+        <Link to="/dashboard"><li>Dashboard</li></Link> 
       </ul>
 
       <div className={`bx ${isMenuOpen ? 'bx-menu' : ''}`} onClick={handleMenuClick}>

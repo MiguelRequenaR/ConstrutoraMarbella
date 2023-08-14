@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Dashboard from './components/Dashboard/Dashboard'; 
 import Home from './components/Home/Home';
 import Header from './components/Home/Header';
+import Login from './components/Login/Login';
 import 'remixicon/fonts/remixicon.css';
 import './styles/style.css';
 
@@ -27,6 +28,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path='/login' element={<Login/>}/>
         </Routes>
 
       </BrowserRouter>
