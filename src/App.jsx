@@ -5,7 +5,6 @@ import Home from './components/Home/Home';
 import Header from './components/Home/Header';
 import Login from './components/Login/Login';
 import 'remixicon/fonts/remixicon.css';
-import './styles/style.css';
 
 function App() {
   useEffect(() => {
@@ -30,7 +29,6 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path='/login' element={<Login/>}/>
         </Routes>
-
       </BrowserRouter>
   )
 }

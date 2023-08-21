@@ -1,7 +1,7 @@
 import user from '../../assets/images/usuario.png';
 import 'remixicon/fonts/remixicon.css';
 import '../../styles/dashboardstyle.css';
-import Dashboard from './Dashboard';
+import Dashboard from '../components/Dashboard/Dashboard';
 
 function DashboardContent() {
   return (

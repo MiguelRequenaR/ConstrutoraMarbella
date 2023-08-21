@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import 'remixicon/fonts/remixicon.css';
-import '../../styles/style.css';
+
 
 function Header() {
   const location = useLocation();
@@ -25,8 +25,7 @@ function Header() {
       <ul className={`navlist ${isMenuOpen ? 'open' : ''}`}>
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Proyectos en Venta</a></li>
-        <li><a href="#">Proyectos Ejecutados</a></li>
+        <li><a href="#">Proyectos</a></li>
         <li><a href="#">Contacto</a></li>
         <Link to="/login"><li>Iniciar Sesión</li></Link> 
         <Link to="/dashboard"><li>Dashboard</li></Link> 
