@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.front-page{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+.header-home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-home .logo{
+    position: relative;
+    max-width: 80px;
+}
+.header-home .logo img{
+    height: 100px;
+    border-radius: 50%;
+}
+.header-home ul{
+    position: relative;
+    display: flex;
+}
+.header-home ul li{
+    list-style: none;
+}
+.header-home ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: bold;
+    margin-left: 40px;
+    text-decoration: none;
+}
+.content-home{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-home .info-home{
+    position: relative;
+    max-width: 600px;
+}
+.content-home .info-home h2{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.content-home .info-home h2 span{
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.content-home .info-home p{
+    color: #333;
+}
+.content-home .info-home a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}

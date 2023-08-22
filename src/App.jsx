@@ -1,35 +1,45 @@
-import { useEffect } from 'react';
-import { BrowserRouter, Routes, Route} from 'react-router-dom'
-import Dashboard from './components/Dashboard/Dashboard'; 
-import Home from './components/Home/Home';
-import Header from './components/Home/Header';
-import Login from './components/Login/Login';
+
+// import { BrowserRouter, Routes, Route} from 'react-router-dom'
+// import Dashboard from './components/Dashboard/Dashboard'; 
+// import Login from './components/Login/Login';
 import 'remixicon/fonts/remixicon.css';
+import logo from './assets/images/logoCM.png';
+import imghome from './assets/images/home1.jpg';
+import './styles/home.css';
 
 function App() {
-  useEffect(() => {
-    let menu = document.querySelector('.ri-menu-line');
-    let navlist = document.querySelector('.navlist');
-
-    if (menu && navlist) {
-      menu.onclick = () => {
-        menu.classList.toggle('bx-menu');
-        navlist.classList.toggle('open');
-      };
-    }
-  }, []);
-
-
-
+ 
   return (
-    <BrowserRouter>
-        <Header/>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path='/login' element={<Login/>}/>
-        </Routes>
-      </BrowserRouter>
+    <div>
+        <section className='front-page'>
+            <header className='header-home'>
+                <a href="" className="logo"><img src={logo} alt="" /></a>
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Nosotros</a></li>
+                    <li><a href="">Proyectos</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="">Iniciar Sesión</a></li>
+                    <li><a href="">Dashboard</a></li>
+                </ul>
+            </header>
+            <div className='content-home'>
+                <div className='info-home'>
+                    <h2>Constructora <br /> <span>Marbella</span></h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ullam ipsum vel natus atque hic sit, obcaecati tempora 
+                        tenetur eius quam voluptatem quasi, nihil tempore repellat 
+                        illum quo cum magnam fugiat!
+                    </p>
+                    <a href="#">Ver más</a>
+                </div>
+                <div className='content-img'>
+                    <img src={imghome} alt="" className='home-img'/>
+                </div>
+            </div>
+        </section>
+    </div>
   )
 }
 
