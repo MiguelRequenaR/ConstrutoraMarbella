@@ -4,7 +4,6 @@
 // import Login from './components/Login/Login';
 import 'remixicon/fonts/remixicon.css';
 import logo from './assets/images/logoCM.png';
-import imghome from './assets/images/home1.jpg';
 import './styles/home.css';
 
 function App() {
@@ -23,21 +22,6 @@ function App() {
                     <li><a href="">Dashboard</a></li>
                 </ul>
             </header>
-            <div className='content-home'>
-                <div className='info-home'>
-                    <h2>Constructora <br /> <span>Marbella</span></h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Ullam ipsum vel natus atque hic sit, obcaecati tempora 
-                        tenetur eius quam voluptatem quasi, nihil tempore repellat 
-                        illum quo cum magnam fugiat!
-                    </p>
-                    <a href="#">Ver más</a>
-                </div>
-                <div className='content-img'>
-                    <img src={imghome} alt="" className='home-img'/>
-                </div>
-            </div>
         </section>
     </div>
   )
