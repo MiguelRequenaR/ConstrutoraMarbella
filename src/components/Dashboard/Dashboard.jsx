@@ -37,11 +37,11 @@ function Dashboard() {
   
               {sidebarLinks.map((link, index) => (
                 <li key={index} className={activeLink === link.label ? 'active' : ''}>
-                        <a href="#" onClick={() => handleLinkClick(link.label)}>
+                    <a href="#" onClick={() => handleLinkClick(link.label)}>
                             <i className={link.icon}></i>
                             {link.label}
-                        </a>
-                    </li>
+                    </a>
+                </li>
                 ))}
 
           </ul>

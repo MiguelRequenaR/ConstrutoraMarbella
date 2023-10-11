@@ -19,7 +19,9 @@ function App() {
                     <li><a href="">Proyectos</a></li>
                     <li><a href="">Contacto</a></li>
                     <li><a href="">Iniciar Sesión</a></li>
-                    <li><a href="">Dashboard</a></li>
+
+                      <li><a href="/src/components/Dashboard/Dashboard.jsx">Dashboard</a></li>                   
+
                 </ul>
             </header>
         </section>
